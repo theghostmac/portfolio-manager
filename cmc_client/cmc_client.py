@@ -8,8 +8,6 @@ CMC_API_KEY=os.getenv('CMC_API_KEY')
 if CMC_API_KEY is None:
     raise ValueError("No CMC_API_KEY found. Please set it in the .env file.")
 
-print(CMC_API_KEY)
-
 CMC_PRICE_CONVERSION_URL = "https://pro-api.coinmarketcap.com/v2/tools/price-conversion"
 
 # params: amount & symbol
@@ -35,7 +33,7 @@ class CMCClient:
         else:
             response.raise_for_status()
             
-# Usage example:
-cmc_client = CMCClient(CMC_API_KEY)
-response = cmc_client.get_conversion_rate('BTC')
-print(response)
+# # Usage example:
+# cmc_client = CMCClient(CMC_API_KEY)
+# response = cmc_client.get_conversion_rate('BTC')
+# print(response)
