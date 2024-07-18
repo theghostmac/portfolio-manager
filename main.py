@@ -1,16 +1,11 @@
-# This is a sample Python script.
+from models.portfolio_manager import PortolioManager
 
-# Press ⇧F10 to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def do_math():
+    manager = PortolioManager()
+    manager.add_asset("BTC", 1.5, 64_000.0)
+    manager.add_asset("USDT", 100, 156_000.0)
+    manager.list_assets()
+    print("Total Portfolio Value: ", manager.calculate_portfolio_value())
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    do_math()
