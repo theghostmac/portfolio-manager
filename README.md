@@ -5,7 +5,7 @@
 - [x] Plug a CoinMarketCap API for conversion rates in real-time
 - [x] Plug a Stock API (I don't have stocks to list yet)
 - [x] Turn the tool to a CLI tool
-- [ ] Add a database to store values
+- [x] Add a database for state management.
 
 
 ## Usage
