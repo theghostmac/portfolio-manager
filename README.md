@@ -9,21 +9,26 @@
 
 
 ## Usage
-
+Add an asset:
 ```
 python main.py add-asset CRYPTO BTC 1.5 64000.0
-# BTC: 1.5 @ 64000.0
+Crypto - BTC: 1.5 @ 64000.0
 ```
 
+Update the price of an asset:
 ```
 python main.py update-price BTC 65000.0
+Crypto - BTC: 1.5 @ 65000.0
 ```
 
+Calculate the total value of the portfolio:
 ```
 python main.py calculate-value
-The Total Portfolio Value in USD: 0.0
+Total Portfolio Value in USD: 150042.23452231212
 ```
 
+List all assets:
 ```
 python main.py list-assets
+Crypto - BTC: 1.5 @ 65000.0
 ```
